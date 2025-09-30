@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos Emily Augusto</title>
+    <title>Projetos - Emily Augusto</title>
 
     <link rel="icone emily" sizes="180x180" href="icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
@@ -11,75 +11,91 @@
     <link rel="manifest" href="site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body class="antialiased">
 
-    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 left-0 right-0 z-50 border-b border-gray-700/50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-white">Emily.</a>
+    <header class="bg-slate-50/80 backdrop-blur-sm sticky top-0 left-0 right-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center h-20">
+            <a href="index.html"><img src="icon.png" alt="Logo de Emily" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"></a>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="index.html#sobre" class="text-gray-300 hover:text-white transition-colors duration-300">Sobre</a>
-                <a href="index.html#filosofia" class="text-gray-300 hover:text-white transition-colors duration-300">Filosofia</a>
-                <a href="projetos.html" class="gradient-text font-semibold">Projetos</a>
-                <a href="index.html#contato" class="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">Contato</a>
+                <a href="index.html#sobre" class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300">Sobre</a>
+                <a href="index.html#jornada" class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300">Jornada</a>
+                <a href="index.html#filosofia" class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300">Filosofia</a>
+                <a href="projetos.html" class="font-bold text-indigo-500">Projetos</a>
+                <a href="index.html#contato" class="bg-slate-900 hover:bg-slate-700 text-white font-medium py-2 px-5 rounded-full transition-colors duration-300">Contato</a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/95 backdrop-blur-sm">
-            <a href="index.html#sobre" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Sobre</a>
-            <a href="index.html#filosofia" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Filosofia</a>
-            <a href="projetos.html" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Projetos</a>
-            <a href="index.html#contato" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Contato</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm border-t border-slate-200">
+            <a href="index.html#sobre" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Sobre</a>
+            <a href="index.html#jornada" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Jornada</a>
+            <a href="index.html#filosofia" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Filosofia</a>
+            <a href="projetos.html" class="mobile-link block py-3 px-6 font-semibold text-indigo-500 bg-slate-100">Projetos</a>
+            <a href="index.html#contato" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Contato</a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-16 md:py-24">
+    <main class="max-w-7xl mx-auto px-6 py-16 md:py-24">
         <div class="text-center mb-16">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-white">Todos os Meus Projetos</h1>
-            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mt-4">Uma coleção completa dos meus trabalhos, desde sistemas web a designs de aplicativos.</p>
-            <div class="max-w-3xl mx-auto mt-8 bg-gray-900/50 border border-indigo-500/30 rounded-lg p-4 flex items-center gap-4 text-left">
-                <svg class="w-8 h-8 text-indigo-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                <p class="text-indigo-200/80"><strong>Meu compromisso com a confidencialidade é uma prioridade.</strong> Por essa razão, esta galeria foca nos meus trabalhos públicos e de estudo.</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900">Todos os Meus Projetos</h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mt-4">Uma coleção completa dos meus trabalhos, desde sistemas web a designs de aplicativos.</p>
+            
+            <div class="max-w-3xl mx-auto mt-8 bg-white border border-slate-200 rounded-xl p-4 flex items-center gap-4 text-left shadow-sm">
+                <svg class="w-8 h-8 text-indigo-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <p class="text-slate-700"><strong class="text-slate-800">Meu compromisso com a confidencialidade é uma prioridade.</strong> Por essa razão, esta galeria foca nos meus trabalhos públicos e de estudo.</p>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div data-project-id="petshop-lp-behance" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/5.png" alt="Landing Page PetShop" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Landing Page para PetShop</h3><p class="text-gray-400 text-sm">Design vibrante e acolhedor focado na conexão emocional com os donos de pets.</p></div>
-            <div data-project-id="estetica-automotiva-lp" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/7.png" alt="Landing Page Estética Automotiva" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Estética Automotiva</h3><p class="text-gray-400 text-sm">Design sofisticado e moderno para destacar serviços de detalhamento premium.</p></div>
-            <div data-project-id="nail-designer-lp" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/8.png" alt="Landing Page Nail Designer" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Nail Designer</h3><p class="text-gray-400 text-sm">Design elegante focado em exibir o portfólio e facilitar o agendamento de clientes.</p></div>
-            <div data-project-id="spa-lp" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/6.png" alt="Landing Page SPA" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Landing Page para SPA</h3><p class="text-gray-400 text-sm">Design de interface focado em uma estética limpa e experiência de usuário relaxante.</p></div>
-            <div data-project-id="vaggas-design" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/2.png" alt="App Vaggas" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Vaggas - App de Aluguel de Vagas</h3><p class="text-gray-400 text-sm">Estudo de caso e design de interface para um app de aluguel de vagas de garagem.</p></div>
-            <div data-project-id="barbearia-lp" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/1.png" alt="Landing Page Barbearia" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Landing Page Barbearia</h3><p class="text-gray-400 text-sm">Website de página única, focado em conversão e agendamentos online.</p></div>
-            <div data-project-id="restaurante-app" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/3.png" alt="App Restaurante" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">App Restaurante Japonês (Estudo)</h3><p class="text-gray-400 text-sm">Projeto de estudo em Flutter que simula um app de restaurante, com cardápio e carrinho.</p></div>
-            <div data-project-id="estoque-ti" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/9.png" alt="Sistema de Estoque" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Sistema de Estoque de TI</h3><p class="text-gray-400 text-sm">Sistema web robusto para gestão de ativos de TI, com 2FA e controle de usuários.</p></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div data-project-id="petshop-lp-behance" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/5.png" alt="Landing Page PetShop" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">Landing Page para PetShop</h3><p class="text-slate-600 text-sm mt-auto">Design vibrante e acolhedor focado na conexão emocional com os donos de pets.</p></div>
+            <div data-project-id="estetica-automotiva-lp" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/7.png" alt="Landing Page Estética Automotiva" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">Estética Automotiva</h3><p class="text-slate-600 text-sm mt-auto">Design sofisticado e moderno para destacar serviços de detalhamento premium.</p></div>
+            <div data-project-id="nail-designer-lp" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/8.png" alt="Landing Page Nail Designer" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">Nail Designer</h3><p class="text-slate-600 text-sm mt-auto">Design elegante focado em exibir o portfólio e facilitar o agendamento de clientes.</p></div>
+            <div data-project-id="spa-lp" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/6.png" alt="Landing Page SPA" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">Landing Page para SPA</h3><p class="text-slate-600 text-sm mt-auto">Design de interface focado em uma estética limpa e experiência de usuário relaxante.</p></div>
+            <div data-project-id="vaggas-design" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/2.png" alt="App Vaggas" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">Vaggas - App de Aluguel de Vagas</h3><p class="text-slate-600 text-sm mt-auto">Estudo de caso e design de interface para um app de aluguel de vagas de garagem.</p></div>
+            <div data-project-id="barbearia-lp" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/1.png" alt="Landing Page Barbearia" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">Landing Page Barbearia</h3><p class="text-slate-600 text-sm mt-auto">Website de página única, focado em conversão e agendamentos online.</p></div>
+            <div data-project-id="restaurante-app" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/3.png" alt="App Restaurante" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">App Restaurante Japonês (Estudo)</h3><p class="text-slate-600 text-sm mt-auto">Projeto de estudo em Flutter que simula um app de restaurante, com cardápio e carrinho.</p></div>
+            <div data-project-id="estoque-ti" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer"><img src="img/9.png" alt="Sistema de Estoque" class="rounded-2xl mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-slate-800">Sistema de Estoque de TI</h3><p class="text-slate-600 text-sm mt-auto">Sistema web robusto para gestão de ativos de TI, com 2FA e controle de usuários.</p></div>
         </div>
     </main>
 
-    <footer class="border-t border-gray-800 py-6 mt-16"><div class="container mx-auto px-6 text-center text-gray-500"><p>&copy; <span id="currentYear"></span> Emily. Todos os direitos reservados.</p></div></footer>
+    <footer class="border-t border-slate-200 py-8 mt-16">
+        <div class="max-w-5xl mx-auto px-6 text-center text-slate-500"><p>&copy; <span id="currentYear"></span> Emily. Todos os direitos reservados.</p></div>
+    </footer>
+    
     <div id="project-modal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-        <div id="modal-content" class="modal-content bg-gray-900 rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto p-8 transform scale-95 transition-transform duration-300 border border-gray-700 relative">
-            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
-            <h2 id="modal-title" class="text-3xl md:text-4xl font-bold mb-4 text-white"></h2>
+        <div id="modal-content" class="modal-content bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto p-8 transform scale-95 transition-transform duration-300 border border-slate-200 relative">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800 transition-colors z-20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <h2 id="modal-title" class="text-3xl md:text-4xl font-bold mb-4 text-slate-900"></h2>
             <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
-            <div id="modal-carousel-container" class="relative w-full mb-8 overflow-hidden rounded-lg">
+            <div id="modal-carousel-container" class="relative w-full mb-8 overflow-hidden rounded-lg bg-slate-100">
                 <div id="modal-carousel-track" class="flex transition-transform duration-500 ease-in-out"></div>
-                <button id="prevBtn" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/70 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-                <button id="nextBtn" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/70 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                <button id="prevBtn" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/20 text-slate-800 p-2 rounded-full hover:bg-black/40 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                <button id="nextBtn" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/20 text-slate-800 p-2 rounded-full hover:bg-black/40 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="md:col-span-2 text-gray-300 space-y-4"><h3 class="text-2xl font-semibold text-white">Sobre o Projeto</h3><p id="modal-description"></p><h4 class="text-xl font-semibold text-white mt-6 mb-2">O Desafio</h4><p id="modal-challenge" class="text-gray-400"></p><h4 class="text-xl font-semibold text-white mt-6 mb-2">A Solução</h4><p id="modal-solution" class="text-gray-400"></p></div>
+                <div class="md:col-span-2 text-slate-600 space-y-4"><h3 class="text-2xl font-semibold text-slate-800">Sobre o Projeto</h3><p id="modal-description"></p><h4 class="text-xl font-semibold text-slate-800 mt-6 mb-2">O Desafio</h4><p id="modal-challenge" class="text-slate-600"></p><h4 class="text-xl font-semibold text-slate-800 mt-6 mb-2">A Solução</h4><p id="modal-solution" class="text-slate-600"></p></div>
                 <div class="space-y-6">
-                    <div><h4 class="text-lg font-semibold text-white mb-2">Meu Papel</h4><p id="modal-role" class="text-gray-400"></p></div>
-                    <div><h4 class="text-lg font-semibold text-white mb-2">Ferramentas</h4><p id="modal-tools" class="text-gray-400"></p></div>
+                    <div><h4 class="text-lg font-semibold text-slate-800 mb-2">Meu Papel</h4><p id="modal-role" class="text-slate-600"></p></div>
+                    <div><h4 class="text-lg font-semibold text-slate-800 mb-2">Ferramentas</h4><p id="modal-tools" class="text-slate-600"></p></div>
                     <div><a id="modal-link" href="#" target="_blank" class="inline-block w-full text-center bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">Ver Projeto</a></div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
+    // Script para o ano atual no rodapé
+    document.addEventListener('DOMContentLoaded', () => {
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    });
+    </script>
     <script src="js/script.js" defer></script>
 </body>
 </html>
