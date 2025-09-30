@@ -1,16 +1,17 @@
-/* Definições de fonte e cores base do site */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #030712; /* Cor de fundo principal */
-    color: #E5E7EB; /* Cor principal do texto */
+/* Definições de fonte e cores base do site (TEMA CLARO) */
+:root {
+    --cor-fundo: #f8fafc; /* Um cinza muito claro, quase branco (Tailwind slate-50) */
+    --cor-card: #ffffff; /* Branco puro para os cards */
+    --cor-borda: #e2e8f0; /* Borda cinza bem sutil (Tailwind slate-200) */
+    --cor-texto-principal: #1e293b; /* Texto principal cinza escuro (Tailwind slate-800) */
+    --cor-texto-secundario: #475569; /* Texto secundário/parágrafos (Tailwind slate-600) */
+    --cor-destaque: #6366f1; /* Cor de destaque (Tailwind indigo-500) */
 }
 
-/* Classe para criar um texto com gradiente */
-.gradient-text {
-    background: linear-gradient(to right, #818cf8, #c084fc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
 }
 
 /* Animação de fade-in para as seções */
@@ -25,17 +26,6 @@ body {
     transform: translateY(0);
 }
 
-/* Estilização dos números de fundo da seção de projetos */
-.background-number {
-    position: absolute;
-    font-size: 16rem;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.03);
-    z-index: 0;
-    user-select: none;
-    line-height: 1;
-}
-
 /* Estilo para a transição do modal */
 .modal {
     transition: opacity 0.3s ease;
@@ -46,5 +36,5 @@ body {
 
 /* Estilos para a seção interativa "Interruptor Criativo" */
 .creative-switch-container .view {
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
