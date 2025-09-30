@@ -11,182 +11,184 @@
     <link rel="manifest" href="site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
-<body class="antialiased px-4 sm:px-6 md:px-8">
+<body class="antialiased">
 
-    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-700/50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-white">Emily.</a>
+    <header class="bg-slate-50/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center h-20">
+            <a href="#home"><img src="icon.png" alt="Logo de Emily" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"></a>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#sobre" class="text-gray-300 hover:text-white transition-colors duration-300">Sobre</a>
-                <a href="#filosofia" class="text-gray-300 hover:text-white transition-colors duration-300">Filosofia</a>
-                <a href="projetos.html" class="text-gray-300 hover:text-white transition-colors duration-300">Projetos</a>
-                <a href="#contato" class="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">Contato</a>
+                <a href="#sobre" class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300">Sobre</a>
+                <a href="#jornada" class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300">Jornada</a>
+                <a href="#filosofia" class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300">Filosofia</a>
+                <a href="#projetos" class="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300">Projetos</a>
+                <a href="#contato" class="bg-slate-900 hover:bg-slate-700 text-white font-medium py-2 px-5 rounded-full transition-colors duration-300">Contato</a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/95 backdrop-blur-sm">
-            <a href="#sobre" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Sobre</a>
-            <a href="#filosofia" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Filosofia</a>
-            <a href="projetos.html" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Projetos</a>
-            <a href="#contato" class="mobile-link block py-3 px-6 text-gray-300 hover:bg-gray-800">Contato</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm border-t border-slate-200">
+            <a href="#sobre" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Sobre</a>
+            <a href="#jornada" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Jornada</a>
+            <a href="#filosofia" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Filosofia</a>
+            <a href="#projetos" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Projetos</a>
+            <a href="#contato" class="mobile-link block py-3 px-6 text-slate-600 hover:bg-slate-100">Contato</a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6">
+    <main class="max-w-6xl mx-auto px-6">
         <section id="home" class="min-h-screen flex items-center pt-24 md:pt-20">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center w-full">
                 <div class="text-center md:text-left order-2 md:order-1">
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">UI/UX Designer & <span class="gradient-text">Desenvolvedora</span></h1>
-                    <p class="text-lg md:text-xl text-gray-300 max-w-xl mx-auto md:mx-0 mb-8">Criando experiências digitais que encantam usuários e resolvem problemas complexos, unindo design intuitivo e desenvolvimento robusto.</p>
-                    <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="projetos.html" class="w-full sm:w-auto bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">Ver meus projetos</a>
-                        <a href="#contato" class="w-full sm:w-auto bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">Entrar em contato</a>
+                    <span class="text-slate-600">Olá! sou</span>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight mt-1 mb-3">Emily Augusto</h1>
+                    <h2 class="text-lg md:text-xl text-slate-500 mb-8">UI/UX Designer & Desenvolvedora</h2>
+                    <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4">
+                        <a href="projetos.html" class="bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300">Meus projetos</a>
+                        <a href="#contato" class="bg-transparent border-2 border-slate-300 hover:bg-slate-100 text-slate-700 font-bold py-3 px-8 rounded-full transition-all duration-300">Contato</a>
                     </div>
                 </div>
-                <div class="flex-shrink-0 order-1 md:order-2 flex justify-center">
-                    <div class="p-1 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500">
-                        <div class="p-1 bg-gray-950 rounded-full"><img src="img/minha-foto.jpg" alt="Foto de Emily" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover"></div>
-                    </div>
+                <div class="flex justify-center md:justify-end order-1 md:order-2">
+                    <div class="p-1"><img src="img/CardEmily.png" alt="Foto de Emily" class="w-80 sm:w-96 md:w-auto"></div>      
                 </div>
             </div>
         </section>
         
         <section id="sobre" class="py-20 md:py-32 fade-in-section">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    <div class="lg:col-span-3">
-                        <h2 class="text-3xl font-bold mb-8 text-white">Minha Jornada</h2>
-                        <div class="border-l-2 border-indigo-500 pl-6 space-y-8">
-                            <div class="relative"><div class="absolute -left-[34px] top-1 h-4 w-4 rounded-full bg-indigo-500"></div><h3 class="text-xl font-semibold">Desenvolvedora de Projetos Independentes</h3><p class="text-indigo-400 font-medium">Projetos Pessoais e Contratados | 2023 - Atual</p><p class="text-gray-400 mt-2">Desenvolvimento de soluções web completas, do design da interface (UI/UX) até a implementação (front-end e back-end), atendendo a diversos objetivos.</p></div>
-                            <div class="relative"><div class="absolute -left-[34px] top-1 h-4 w-4 rounded-full bg-indigo-500"></div><h3 class="text-xl font-semibold">Assistente de Sistemas</h3><p class="text-indigo-400 font-medium">Grupo Feital Inoctech | Jul 2024 - Atual</p><p class="text-gray-400 mt-2">Após ser efetivada, assumi maiores responsabilidades na manutenção e desenvolvimento de novas funcionalidades para os sistemas internos, colaborando com equipes para otimizar processos.</p></div>
-                            <div class="relative"><div class="absolute -left-[34px] top-1 h-4 w-4 rounded-full bg-indigo-500"></div><h3 class="text-xl font-semibold">Aprendiz de TI</h3><p class="text-indigo-400 font-medium">Grupo Feital Inoctech | Nov 2023 - Jul 2024</p><p class="text-gray-400 mt-2">Iniciei minha jornada na empresa oferecendo suporte ao setor de TI, aprendendo as rotinas de manutenção de sistemas e auxiliando no desenvolvimento de pequenas funcionalidades.</p></div>
-                         </div>
-                        <h2 class="text-3xl font-bold mt-12 mb-8 text-white">Formação Acadêmica</h2>
-                        <div class="border-l-2 border-indigo-500 pl-6 space-y-8">
-                            <div class="relative"><div class="absolute -left-[34px] top-1 h-4 w-4 rounded-full bg-indigo-500"></div><h3 class="text-xl font-semibold">Ciência da Computação (Bacharelado)</h3><p class="text-indigo-400 font-medium">Uninove | 2024 - 2027 (Previsão)</p></div>
-                            <div class="relative"><div class="absolute -left-[34px] top-1 h-4 w-4 rounded-full bg-indigo-500"></div><h3 class="text-xl font-semibold">Desenvolvimento de Sistemas (Curso Técnico)</h3><p class="text-indigo-400 font-medium">Etec de Mauá | 2021 - 2023 (Concluído)</p></div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-2">
-                        <h2 class="text-3xl font-bold mb-8 text-white">Habilidades</h2>
-                        <h4 class="font-semibold mb-4 text-gray-300">Ferramentas & Tecnologias</h4>
-                        <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-4xl text-gray-300">
-                            
-                            <div title="Figma" class="bg-gray-800 p-3 rounded-lg border border-gray-700">
-                                <i class="devicon-figma-plain colored"></i>
-                            </div>
-                            
-                            <div title="C#" class="bg-gray-800 p-3 rounded-lg border border-gray-700">
-                                <i class="devicon-csharp-line colored"></i>
-                            </div>
-                            
-                            <div title=".NET" class="bg-gray-800 p-3 rounded-lg border border-gray-700">
-                                <i class="devicon-dotnetcore-plain colored"></i>
-                            </div>
-                            
-                            <div title="JavaScript" class="bg-gray-800 p-3 rounded-lg border border-gray-700">
-                                <i class="devicon-javascript-plain colored"></i>
-                            </div>
+    <div class="text-center mb-16">
+        <span class="text-slate-500">Saiba mais</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-1">Sobre mim</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="h-full bg-white rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 p-6 flex items-center justify-center max-h-[30rem]">
+            
+            <img src="img/emily2.jpeg" alt="Descrição da imagem" class="w-full h-full object-cover rounded-2xl">
 
-                            <div title="Flutter" class="bg-gray-800 p-3 rounded-lg border border-gray-700">
-                                <i class="devicon-flutter-plain colored"></i>
-                            </div>
+        </div>
+        <div class="flex flex-col justify-center">
+            <p class="text-slate-600 text-lg leading-relaxed mb-10">
+                Sou uma estudante de graduação apaixonada por Desenvolvimento Frontend e design de UI/UX. Com experiência prática em diversos projetos, desenvolvi uma sólida compreensão de tecnologias front-end e back-end, bem como dos princípios de design centrado no usuário.
+            </p>
+            <h3 class="text-2xl font-bold text-slate-800 mb-4">Habilidades</h3>
+             <div class="flex flex-wrap gap-3">
+                <span class="skill-tag">Figma</span><span class="skill-tag">C#</span><span class="skill-tag">.NET</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Flutter</span><span class="skill-tag">UI/UX Design</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-                        </div>
-                    </div>
+        <section id="jornada" class="py-20 md:py-32 fade-in-section">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-1">Jornada & Formação</h2>
+                <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Minha trajetória profissional e acadêmica que moldou minhas habilidades e conhecimentos.</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-slate-800 mb-6">Jornada Profissional</h3>
+                <div class="space-y-4">
+                    <div class="p-5 bg-white rounded-xl border border-slate-200"><h4 class="font-semibold text-slate-700">Desenvolvedora de Projetos Independentes</h4><p class="text-sm text-slate-500">Projetos Pessoais e Contratados | 2023 - Atual</p></div>
+                    <div class="p-5 bg-white rounded-xl border border-slate-200"><h4 class="font-semibold text-slate-700">Assistente de Sistemas</h4><p class="text-sm text-slate-500">Grupo Feital Inoctech | Jul 2024 - Atual</p></div>
+                    <div class="p-5 bg-white rounded-xl border border-slate-200"><h4 class="font-semibold text-slate-700">Aprendiz de TI</h4><p class="text-sm text-slate-500">Grupo Feital Inoctech | Nov 2023 - Jul 2024</p></div>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-800 mt-12 mb-6">Formação Acadêmica</h3>
+                <div class="space-y-4">
+                    <div class="p-5 bg-white rounded-xl border border-slate-200"><h4 class="font-semibold text-slate-700">Ciência da Computação (Bacharelado)</h4><p class="text-sm text-slate-500">Uninove | 2024 - 2027 (Previsão)</p></div>
+                    <div class="p-5 bg-white rounded-xl border border-slate-200"><h4 class="font-semibold text-slate-700">Desenvolvimento de Sistemas (Curso Técnico)</h4><p class="text-sm text-slate-500">Etec de Mauá | 2021 - 2023 (Concluído)</p></div>
                 </div>
             </div>
         </section>
 
         <section id="filosofia" class="py-20 md:py-32 fade-in-section">
-            <div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-extrabold text-white">Minha Filosofia</h2><p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">Acredito que um bom design nasce na estrutura e floresce no código. Alterne para ver a mágica acontecer.</p></div>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900">Minha Filosofia</h2>
+                <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Acredito que um bom design nasce na estrutura e floresce no código. Alterne para ver a mágica acontecer.</p>
+            </div>
             <div class="flex flex-col items-center gap-8">
-                <div class="flex items-center space-x-4"><span id="label-design" class="font-semibold text-white transition-colors duration-300">Design</span><label for="creative-toggle" class="relative inline-flex items-center cursor-pointer"><input type="checkbox" id="creative-toggle" class="sr-only peer"><div class="w-14 h-8 bg-gray-700 rounded-full peer peer-checked:bg-indigo-600 transition-colors duration-300"></div><div class="absolute top-1 left-1 bg-white border-gray-300 border rounded-full h-6 w-6 transition-transform duration-300 peer-checked:translate-x-6"></div></label><span id="label-code" class="font-semibold text-gray-500 transition-colors duration-300">Código</span></div>
+                <div class="flex items-center space-x-4">
+                    <span id="label-design" class="font-semibold text-slate-800 transition-colors duration-300">Design</span>
+                    <label for="creative-toggle" class="relative inline-flex items-center cursor-pointer"><input type="checkbox" id="creative-toggle" class="sr-only peer"><div class="w-14 h-8 bg-slate-200 rounded-full peer peer-checked:bg-slate-800 transition-colors duration-300"></div><div class="absolute top-1 left-1 bg-white border-slate-300 border rounded-full h-6 w-6 transition-transform duration-300 peer-checked:translate-x-6"></div></label>
+                    <span id="label-code" class="font-semibold text-slate-400 transition-colors duration-300">Código</span>
+                </div>
                 <div class="creative-switch-container relative w-full max-w-sm h-80">
-                    <div id="code-view" class="view absolute inset-0 bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-xl opacity-0"><div class="flex flex-col items-center text-center h-full"><img src="img/minha-foto.jpg" class="rounded-full w-20 h-20 mb-4 border-2 border-indigo-400 object-cover" alt="Avatar"><h3 class="text-xl font-bold text-white">Emily</h3><p class="text-indigo-400">UI/UX & Developer</p><div class="flex-grow flex items-center"><p class="text-gray-300">Este é o componente final, estilizado e funcional, pronto para encantar o usuário.</p></div><button class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors">Contato</button></div></div>
-                    <div id="design-view" class="view absolute inset-0 bg-gray-900 p-6 rounded-2xl border-2 border-dashed border-gray-600 opacity-100"><div class="flex flex-col items-center text-center h-full"><div class="w-20 h-20 rounded-full bg-gray-700 border-2 border-dashed border-gray-500 flex items-center justify-center mb-4"><svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div><div class="w-2/3 h-5 bg-gray-700 rounded mb-2"></div><div class="w-1/2 h-4 bg-gray-700 rounded mb-6"></div><div class="w-full h-16 bg-gray-700/50 rounded mb-4 flex-grow p-2 border border-dashed border-gray-600"><p class="text-gray-500 text-xs text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p></div><div class="w-full h-10 bg-gray-700 rounded"></div></div></div>
+                    <div id="code-view" class="view absolute inset-0 bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 opacity-0"><div class="flex flex-col items-center text-center h-full"><img src="img/minha-foto.jpg" class="rounded-full w-20 h-20 mb-4 border-2 border-indigo-400 object-cover" alt="Avatar"><h3 class="text-xl font-bold text-slate-800">Emily</h3><p class="text-indigo-500">UI/UX & Developer</p><div class="flex-grow flex items-center"><p class="text-slate-600">Este é o componente final, estilizado e funcional.</p></div><button class="w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-full transition-colors">Contato</button></div></div>
+                    <div id="design-view" class="view absolute inset-0 bg-white p-6 rounded-3xl border-2 border-dashed border-slate-300 opacity-100"><div class="flex flex-col items-center text-center h-full"><div class="w-20 h-20 rounded-full bg-slate-100 border-2 border-dashed border-slate-300 flex items-center justify-center mb-4"><svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 '0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div><div class="w-2/3 h-5 bg-slate-200 rounded mb-2"></div><div class="w-1/2 h-4 bg-slate-200 rounded mb-6"></div><div class="w-full h-16 bg-slate-100 rounded mb-4 flex-grow p-2 border border-dashed border-slate-300"><p class="text-slate-400 text-xs text-left">"Lorem ipsum dolor sit amet..."</p></div><div class="w-full h-10 bg-slate-200 rounded-full"></div></div></div>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="relative py-20 md:py-32 fade-in-section">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 relative z-10 text-white">Projetos em Destaque</h2>
-            <p class="text-center text-lg text-gray-400 max-w-3xl mx-auto mb-16 relative z-10">Esta é uma seleção dos meus trabalhos mais recentes. Para ver a lista completa, visite a página de projetos.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-                <div data-project-id="petshop-lp-behance" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg flex flex-col transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer">
-                    <img src="img/5.png" alt="Landing Page PetShop" class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-white">Landing Page para PetShop</h3>
-                    <div class="flex flex-wrap gap-2 my-3"><span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-pink-500/20 text-pink-300">UI/UX Design</span><span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-500/20 text-gray-300">Landing Page</span></div>
-                    <p class="text-gray-400 text-sm mt-auto">Design vibrante e acolhedor focado na conexão emocional com os donos de pets.</p>
+        <section id="projetos" class="py-20 md:py-32 fade-in-section">
+            <div class="text-center mb-16">
+                 <h2 class="text-4xl md:text-5xl font-bold text-center text-slate-900">Projetos em Destaque</h2>
+                <p class="text-center text-lg text-slate-600 max-w-3xl mx-auto mt-4">Uma seleção dos meus trabalhos mais recentes para você conhecer.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+                <div data-project-id="petshop-lp-behance" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <img src="img/5.png" alt="Landing Page PetShop" class="rounded-2xl mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">Landing Page para PetShop</h3>
+                    <p class="text-slate-600 text-sm mt-auto">Design vibrante focado na conexão emocional com os donos de pets.</p>
                 </div>
-               <div data-project-id="estoque-ti" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer"><img src="img/9.png" alt="Sistema de Estoque" class="rounded-lg mb-4 w-full h-48 object-cover"><h3 class="text-xl font-bold mb-2 text-white">Sistema de Estoque de TI</h3><p class="text-gray-400 text-sm">Sistema web robusto para gestão de ativos de TI, com 2FA e controle de usuários.</p></div>
-        
-                <div data-project-id="nail-designer-lp" class="project-card bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-lg flex flex-col transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer">
-                    <img src="img/8.png" alt="Landing Page Nail Designer" class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-white">Nail Designer</h3>
-                    <div class="flex flex-wrap gap-2 my-3"><span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-pink-500/20 text-pink-300">UI/UX Design</span><span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-500/20 text-gray-300">Branding</span></div>
-                    <p class="text-gray-400 text-sm mt-auto">Design elegante focado em exibir o portfólio e facilitar o agendamento de clientes.</p>
+                <div data-project-id="estoque-ti" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <img src="img/9.png" alt="Sistema de Estoque" class="rounded-2xl mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">Sistema de Estoque de TI</h3>
+                    <p class="text-slate-600 text-sm mt-auto">Sistema web robusto para gestão de ativos de TI, com 2FA e controle de usuários.</p>
+                </div>
+                <div data-project-id="nail-designer-lp" class="project-card bg-white p-6 rounded-3xl border border-slate-200 shadow-lg shadow-slate-100 flex flex-col hover:shadow-xl hover:shadow-slate-200 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <img src="img/8.png" alt="Landing Page Nail Designer" class="rounded-2xl mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">Nail Designer</h3>
+                    <p class="text-slate-600 text-sm mt-auto">Design elegante focado em exibir o portfólio e facilitar o agendamento.</p>
                 </div>
             </div>
-            <div class="text-center mt-16"><a href="projetos.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">Ver todos os projetos</a></div>
+            <div class="text-center mt-16"><a href="projetos.html" class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3 px-8 rounded-full transition-all duration-300">Ver todos os projetos</a></div>
         </section>
 
-        <section id="contato" class="py-20 md:py-32 fade-in-section">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">Vamos conversar?</h2>
-                <p class="text-gray-400 mt-3 mb-8 max-w-2xl mx-auto">Estou sempre aberta a novas oportunidades, colaborações e desafios. Sinta-se à vontade para entrar em contato.</p>
-                <a href="mailto:emilyaugusocontato@gmail.com" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-4 px-10 rounded-lg transition-transform transform hover:scale-105 duration-300 inline-block text-lg">Mande um e-mail</a>
-                
-                <div class="mt-12 flex justify-center space-x-6">
-                    <a href="https://www.linkedin.com/in/emilyaugusto/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                    </a>
-                    <a href="https://github.com/emilyaugusto" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.7 2.7 5.8 5.5 6.1-.6.5-.9 1.2-.9 2.2V22"/></svg>
-                    </a>
-                    
-                    <a href="https://www.behance.net/emilyaugusto" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Behance">
-                        <svg width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"></path>
-                        <path d="M3 12h4.5"></path>
-                        <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.8 1"></path>
-                        <path d="M14 6h7l-1.5 4"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+        <section id="contato" class="py-20 md:py-32 fade-in-section text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Vamos conversar?</h2>
+            <p class="text-slate-600 mt-3 mb-8 max-w-2xl mx-auto">Estou sempre aberta a novas oportunidades, colaborações e desafios. Sinta-se à vontade para entrar em contato.</p>
+            <a href="mailto:emilyaugusocontato@gmail.com" class="bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 inline-block text-lg">Mande um e-mail</a>
         </section>
     </main>
 
-    <footer class="border-t border-gray-800 py-6"><div class="container mx-auto px-6 text-center text-gray-500"><p>&copy; <span id="currentYear"></span> Emily. Todos os direitos reservados.</p></div></footer>
+    <footer class="border-t border-slate-200 py-8 mt-20"><div class="max-w-5xl mx-auto px-6 text-center text-slate-500"><p>&copy; <span id="currentYear"></span> Emily. Todos os direitos reservados.</p></div></footer>
     
     <div id="project-modal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-        <div id="modal-content" class="modal-content bg-gray-900 rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto p-8 transform scale-95 transition-transform duration-300 border border-gray-700 relative">
-            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
-            <h2 id="modal-title" class="text-3xl md:text-4xl font-bold mb-4 text-white"></h2>
+        <div id="modal-content" class="modal-content bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto p-8 transform scale-95 transition-transform duration-300 border border-slate-200 relative">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800 transition-colors z-20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <h2 id="modal-title" class="text-3xl md:text-4xl font-bold mb-4 text-slate-900"></h2>
             <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
-            <div id="modal-carousel-container" class="relative w-full mb-8 overflow-hidden rounded-lg">
+            <div id="modal-carousel-container" class="relative w-full mb-8 overflow-hidden rounded-lg bg-slate-100">
                 <div id="modal-carousel-track" class="flex transition-transform duration-500 ease-in-out"></div>
-                <button id="prevBtn" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/70 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-                <button id="nextBtn" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/70 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                <button id="prevBtn" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/20 text-slate-800 p-2 rounded-full hover:bg-black/40 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                <button id="nextBtn" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/20 text-slate-800 p-2 rounded-full hover:bg-black/40 transition-colors z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="md:col-span-2 text-gray-300 space-y-4"><h3 class="text-2xl font-semibold text-white">Sobre o Projeto</h3><p id="modal-description"></p><h4 class="text-xl font-semibold text-white mt-6 mb-2">O Desafio</h4><p id="modal-challenge" class="text-gray-400"></p><h4 class="text-xl font-semibold text-white mt-6 mb-2">A Solução</h4><p id="modal-solution" class="text-gray-400"></p></div>
+                <div class="md-col-span-2 text-slate-600 space-y-4"><h3 class="text-2xl font-semibold text-slate-800">Sobre o Projeto</h3><p id="modal-description"></p><h4 class="text-xl font-semibold text-slate-800 mt-6 mb-2">O Desafio</h4><p id="modal-challenge" class="text-slate-600"></p><h4 class="text-xl font-semibold text-slate-800 mt-6 mb-2">A Solução</h4><p id="modal-solution" class="text-slate-600"></p></div>
                 <div class="space-y-6">
-                    <div><h4 class="text-lg font-semibold text-white mb-2">Meu Papel</h4><p id="modal-role" class="text-gray-400"></p></div>
-                    <div><h4 class="text-lg font-semibold text-white mb-2">Ferramentas</h4><p id="modal-tools" class="text-gray-400"></p></div>
+                    <div><h4 class="text-lg font-semibold text-slate-800 mb-2">Meu Papel</h4><p id="modal-role" class="text-slate-600"></p></div>
+                    <div><h4 class="text-lg font-semibold text-slate-800 mb-2">Ferramentas</h4><p id="modal-tools" class="text-slate-600"></p></div>
                     <div><a id="modal-link" href="#" target="_blank" class="inline-block w-full text-center bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">Ver Projeto</a></div>
                 </div>
             </div>
         </div>
     </div>
-
+    
+    <style>
+        .skill-tag { display: inline-block; padding: 6px 16px; border: 1px solid #cbd5e1; border-radius: 9999px; color: #475569; font-weight: 500; transition: all 0.2s ease; }
+        .skill-tag:hover { background-color: #f1f5f9; border-color: #94a3b8; }
+    </style>
+    
+    <script>
+    // A data atual será inserida dinamicamente
+    document.addEventListener('DOMContentLoaded', () => {
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+        
+        // O restante do seu script original 'script.js' continua valendo e deve ser mantido no arquivo separado.
+    });
+    </script>
     <script src="js/script.js" defer></script>
 </body>
 </html>
